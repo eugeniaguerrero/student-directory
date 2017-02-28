@@ -28,7 +28,7 @@ def print(students)
 # prints and indexes each student's name
 i = 0
 while i < students.count
-  # #{i+1} allows the count to start from 0 instead of 1
+  # #{i+1} allows the count to start from 1 instead of 0
     puts "#{i+1}. #{students[i][:name]} (#{students[i][:cohort]} cohort)"
     i += 1
     end
