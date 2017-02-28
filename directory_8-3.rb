@@ -23,7 +23,6 @@ def input_students
 end
 
 # then we print the list of students
-# with a method which prints a student's name if it starts with T
 def print(students)
 # loops through each student
   students.each_with_index() do |student, index|
