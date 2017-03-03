@@ -25,16 +25,16 @@ def print_header
 end
 
 def print_students_list(students)
- students.each do |student|
+ @students.each do |student|
   puts "#{student[:name]} (#{student[:cohort]} cohort)"
  end
 end
 # finally, we print the total count of students
-def print_footer(names)
+def print_footer
   if @students.count > 1
-    puts "Overall, we have #{names.count} great students."
+    puts "Overall, we have #{@students.count} great students."
   else
-    puts "Overall, we have #{names.count} great student."
+    puts "Overall, we have #{@students.count} great student."
   end
 end
 
